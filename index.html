@@ -5,108 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <title>健身網站資訊</title>
+    <link rel="stylesheet" href="./css/style.css">
     <!--網頁title-->
-    <style>
-        body {
-            background-color: rgb(231, 224, 216);
-            font-family: 新細明體, 微軟正黑體, 標楷體;
-        }
 
-        .title {
-            /* margin: 10px; */
-            /* padding: ; */
-            font-family: 標楷體;
-            background-color: rgb(43, 15, 197);
-            font-size: 2rem;
-            color: rgb(235, 235, 241);
-            height: 4rem;
-            border-radius: 0.8rem;
-            line-height: 4rem;
-            text-align: center;
-        }
-
-        .text1 {
-            background-color: bisque;
-            font-size: 20px;
-            line-height: 40px;
-            /* margin: 2px 0px; */
-            padding: 6px;
-            border: 2px solid seagreen;
-
-        }
-
-        .text2 {
-            background-color: rgb(176, 227, 236);
-            border-radius: 0.5rem;
-        }
-
-        .text3 {
-            background-color: rgb(28, 19, 146);
-            border-radius: 0.5rem;
-            color: aliceblue;
-            font-size: 2rem;
-        }
-
-        .title2 {
-            margin: 10px;
-            /* padding: ; */
-            font-family: 標楷體;
-            background-color: rgb(43, 15, 197);
-            font-size: 1.5rem;
-            color: rgb(232, 232, 241);
-            height: 2rem;
-            border-radius: 6px;
-            line-height: 2rem;
-            padding: 6px 12px;
-        }
-
-        #container {
-            width: 80%;
-            margin: 12px auto;
-            text-align: center;
-        }
-
-        ol {
-            text-align: left;
-        }
-
-        li {
-            margin-left: 24px;
-
-        }
-
-        ul a {
-            text-decoration: none;
-        }
-
-        ul a:hover {
-            color: brown;
-        }
-
-        ul a:visited {
-            color: black;
-        }
-
-        ul a:active {
-            color: blueviolet;
-        }
-
-        ul li {
-            text-align: left;
-            line-height: 30px;
-        }
-
-        #image {
-            background-color: rgb(216, 24, 40);
-            padding: 6px;
-        }
-
-        #image img {
-            background-color: aliceblue;
-            padding: 2px;
-            width: 31%;
-        }
-    </style>
 </head>
 
 <body>
@@ -186,7 +87,7 @@
         </small>
         <hr>
         <div class="title2">一天所需卡路里</div>
-        <table border="1">
+        <table border="1" id="main-table">
             <thead>
                 <tr>
                     <th>每天活動量</th>
@@ -197,19 +98,19 @@
             </thead>
             <tbody>
                 <tr>
-                    <th>輕度工作</th>
+                    <td>輕度工作</td>
                     <td>35大卡 X 目前體重（公斤）</td>
                     <td>30大卡 X 目前體重（公斤）</td>
                     <td>20~25大卡 X 目前體重（公斤）</td>
                 </tr>
                 <tr>
-                    <th>中度工作</th>
+                    <td>中度工作</td>
                     <td>40大卡 X 目前體重（公斤）</td>
                     <td>35大卡 X 目前體重（公斤）</td>
                     <td>30大卡 X 目前體重（公斤）</td>
                 </tr>
                 <tr>
-                    <th>重度工作</th>
+                    <td>重度工作</td>
                     <td>45大卡 X 目前體重（公斤）</td>
                     <td>40大卡 X 目前體重（公斤）</td>
                     <td>35大卡 X 目前體重（公斤）</td>
@@ -217,7 +118,7 @@
             </tbody>
 
         </table>
-        <p>
+        <p class="text4">
             <a href="./bmi.html">
                 <b>計算BMI:</b>&nbsp;
             </a>
@@ -243,9 +144,10 @@
 
         <hr>
         <div class="title2">填寫表單</div>
-
-        需要更多資訊?免費索取健身資訊<br>
-        <b>前100名還贈送［我愛健身］書籍一本!</b>
+        <div class="text1">
+            需要更多資訊?免費索取健身資訊<br>
+            <b>前100名還贈送［我愛健身］書籍一本!</b>
+        </div>
         <form action="">
             <p>
                 <label for="email">EMAIL</label>
