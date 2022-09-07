@@ -1,6 +1,6 @@
 body {
     background-color: rgb(231, 224, 216);
-    font-family: 新細明體, 微軟正黑體, 標楷體;
+    font-family: 標楷體, 新細明體, 微軟正黑體;
 }
 
 .title {
@@ -18,38 +18,42 @@ body {
 
 .text1 {
     background-color: bisque;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    margin: 2px;
+
     /* margin: 2px 0px; */
-    padding: 6px;
+    padding: 2px;
     border: 2px solid seagreen;
 
 }
 
 .text2 {
-    background-color: rgb(176, 227, 236);
+    background-color: #ffd700;
     border-radius: 0.5rem;
 }
 
 .text3 {
-    background-color: rgb(28, 19, 146);
-    border-radius: 0.5rem;
+    background-color: #d2691e;
+    border-radius: 0.4rem;
     color: aliceblue;
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .text4 {
     text-align: left;
     background-color: #ffe4e1;
     border-radius: 0.3rem;
-    height: 5rem;
-
-    line-height: 1.2rem;
+    height: 6rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 2px;
 }
 
 .title2 {
+    /* display:inline-block 字長多長就多長 */
     display: inline-block;
-    margin: 10px;
+    margin: 6px;
     /* padding: ; */
     font-family: 標楷體;
     background-color: rgb(43, 15, 197);
@@ -58,7 +62,7 @@ body {
     height: 2rem;
     border-radius: 6px;
     line-height: 2rem;
-    padding: 6px 12px;
+    padding: 6px 6px;
 }
 
 #container {
@@ -72,7 +76,7 @@ ol {
 }
 
 li {
-    margin-left: 50px;
+    margin-left: 80px;
 
 }
 
@@ -103,7 +107,7 @@ ul li {
 
 #image {
     background-color: rgb(216, 24, 40);
-    padding: 6px;
+    padding: 4px;
 }
 
 #image img {
@@ -150,4 +154,41 @@ ul li {
 #main-table tr:nth-child(odd) {
     background-color: #4169e1;
     color: rgb(239, 242, 243);
+}
+
+
+.text5 a {
+    background-color: red;
+    color: #f5f8f5;
+    font-size: 1.2rem;
+    border-radius: 6px;
+}
+
+form {
+    background-color: #ce1313;
+    padding: 4px;
+    margin: 4px 0px;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+
+}
+
+form input,
+textarea,
+label {
+    font-size: 24px;
+    margin: 4px;
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color: rgb(252, 249, 94);
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 0px;
 }
