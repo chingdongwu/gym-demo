@@ -34,22 +34,24 @@
 
 <body>
     <div id="container">
-        <h2 class="title">BMI計算機</h2>
+        <div class="title">BMI計算機</div>
         <form action="">
             <label for="name">姓名</label>
-            <input type="text" name="name" id="name" placeholder="your name"><br>
+            <input type="text" name="name" id="name" placeholder="your name" value="jj"><br>
 
             <label for="height">身高</label>
-            <input type="number" name="height" id="height" placeholder="cm" required step="0.1"><br>
+            <input type="number" name="height" id="height" placeholder="cm" required step="0.1" value="188"><br>
 
             <label for="weight">體重</label>
-            <input type="text" name="weight" id="weight" placeholder="Kg" required step="0.1"><br>
+            <input type="text" name="weight" id="weight" placeholder="Kg" required step="0.1" value="65.5"><br>
             <p>
-                <button type="submit">計算</button>
+                <button type="submit" id="calc">計算</button>
             </p>
             <a href="./index.html">回首頁</a>
+
         </form>
     </div>
+    <script src="./js/bmi.js"></script>
 </body>
 
 </html>
